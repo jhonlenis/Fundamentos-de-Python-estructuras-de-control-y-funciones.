@@ -167,3 +167,71 @@ Python evalúa las expresiones matemáticas siguiendo el orden de prioridad **PE
 2. **E**xponentes `**` (Se resuelven de derecha a izquierda si hay varios seguidos).
 3. **M**ultiplicación, **D**ivisión, **A**ritmética de módulo y división entera `*`, `/`, `%`, `//`.
 4. **A**dición (Suma) y **S**ustracción (Resta) `+`, `-`.
+
+# Seccion 4 
+# Laboratorio 1 " Variables: un convertidor simple"
+comando: 
+kilometers = 12.25
+miles = 7.38
+
+Lógica de conversión:
+1 milla = 1.61 kilómetros
+Para pasar de Millas a KM: multiplicamos por 1.61
+Para pasar de KM a Millas: dividimos por 1.61
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "millas son", round(miles_to_kilometers, 2), "kilómetros")
+print(kilometers, "kilómetros son", round(kilometers_to_miles, 2), "millas")
+* Millas a Kilómetros:** Se multiplica la variable `miles` por `1.61`.
+- **Kilómetros a Millas:** Se divide la variable `kilometers` entre `1.61`.
+- **Función `round()`:** Se utilizó para limitar el resultado a 2 decimales, mejorando la legibilidad de la salida.
+
+# Laboratorio 2 "Variables"
+comando: 
+1. Crear las variables y asignar los valores iniciales
+jhon = 3
+mariana = 5
+andres = 6
+
+2. Imprimir las variables en una sola línea separadas por comas
+print(jhon, mariana, andres, sep=", ")
+
+3. Crear la variable total_apples con la suma de las anteriores
+total_apples = jhon + mariana + andres
+
+4. Imprimir el valor total
+print("Número total de manzanas:", total_apples)
+
+5. Experimentando con otras operaciones (Opcional para tu práctica)
+promedio = total_apples / 3
+print("Promedio de manzanas por persona:", round(promedio, 2))
+**Asignación:** Se asignaron valores enteros a las variables `jhon`, `mariana` y `andres`.
+- **Operaciones Aritméticas:** Se utilizó el operador `+` para acumular el valor total en la variable `total_apples`.
+- **Concatenación en `print()`:** Se practicó la impresión de cadenas de texto junto con valores numéricos.
+
+**Código Clave:**
+`total_apples = jhon + mariana + andres`
+
+# Laboratorio 3 "Operadores y expresiones"
+comando: 
+Escenario: Evaluar la expresión 3x^3 - 2x^2 + 3x - 1
+
+x = 0 # Cambia este valor para probar: 0, 1, -1
+x = float(x)
+
+Usamos ** para las potencias y * para las multiplicaciones
+y = 3 * x**3 - 2 * x**2 + 3 * x - 1
+
+print("y =", y)
+**Ecuación:** $3x^3 - 2x^2 + 3x - 1$
+
+**Conceptos Aplicados:**
+- **Precedencia:** Uso de `**` para exponenciación, el cual tiene mayor jerarquía que la multiplicación y la resta.
+- **Tipado Dinámico:** Conversión explícita de la entrada a `float` para asegurar precisión decimal en los cálculos.
+
+**Pruebas realizadas:**
+- Si `x = 0`, `y = -1.0`
+- Si `x = 1`, `y = 3.0`
+- Si `x = -1`, `y = -9.0`
