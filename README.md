@@ -85,3 +85,53 @@ Cada print() dibuja una línea y va formando la figura de flechas lado a lado.
 \n para hacer saltos de línea dentro de un solo print
 Primera parte → flechas duplicadas usando repetición (* 2)
 Segunda parte → una sola flecha usando \n
+
+# Seccion 2
+# Laboratorio 1 "Literales basicos"
+comando: print("--- Enteros ---")
+print(11_111_111) 
+print(-20)
+print("-------------------")
+print("\n--- Flotantes ---")
+print(4.0)
+print(.4)    
+print(3E8)
+print("-------------------")
+print("\n--- Cadenas ---")
+print("Me gusta \"Monty Python\"")  
+print('I\'m Monty Python.')       
+print('Me gusta "Monty Python"')
+print("-------------------")
+print("\n--- Booleanos ---")
+print(True)
+print(False)
+print("\n¿Es True mayor que False?")
+print(True > False)
+Son números sin decimales.
+11_111_111 → los guiones bajos solo ayudan a leer mejor el número (es lo mismo que 11111111).
+-20 → número negativo.
+Son números con decimales.
+4.0 → número decimal.
+.4 → equivale a 0.4.
+3E8 → significa 3 × 10⁸ (300,000,000).
+Son textos.
+\" → sirve para usar comillas dobles dentro de comillas dobles.
+\' → sirve para usar comillas simples dentro de comillas simples.
+También puedes mezclar comillas simples y dobles sin problema.
+Solo hay dos valores:
+True → verdadero
+False → falso
+Resultado: True
+¿Por qué?
+En Python:
+True vale 1
+False vale 0
+
+# Laboratorio 2 "Literales de Python - Cadenas"
+comando: print("\"Estoy\"\n\"\"\"aprendiendo\"\"\"\n\"\"\"\"\"Python\"\"\"\"\"")
+\"
+Sirve para mostrar comillas dobles dentro de un texto.
+\n
+Es un salto de línea (baja a la siguiente línea).
+Tu string tiene 3 partes (por los \n): "\"Estoy\"" "\"\"\"aprendiendo\"\"\"" 
+"\"\"\"\"\"Python\"\"\"\"\""
