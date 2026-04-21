@@ -1,0 +1,13 @@
+print("Flechas duplicadas una al lado de la otra:")
+print("    * " * 2)
+print("   * * " * 2)
+print("  * * " * 2)
+print(" * * " * 2)
+print("*** *** " * 2)
+print("  * * " * 2)
+print("  * * " * 2)
+print("  ***** " * 2)
+
+print("\n" + "-"*30 + "\n")
+print("Flecha generada con una sola instrucción print():")
+print("    *\n   * *\n  * *\n * *\n*** ***\n  * *\n  * *\n  *****")
