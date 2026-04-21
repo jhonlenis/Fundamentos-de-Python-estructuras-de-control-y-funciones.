@@ -26,19 +26,52 @@ Define qué se imprime al final.
 Por defecto es un salto de línea (\n), o sea, baja a la siguiente línea.
 
 # Laboratio 3 "Dando formato a la salida"
-comando: print("Flechas duplicadas una al lado de la otra:")
-print("    * " * 2)
-print("   * * " * 2)
-print("  * * " * 2)
-Print(" * * " * 2)
-print("*** *** " * 2)
-print("  * * " * 2)
-print("  * * " * 2)
-print("  ***** " * 2)
+comando:# 1. Minimizar print() usando \n
+print("    *\n   * *\n  *   *\n *     *\n***   ***\n  *   *\n  *   *\n  *****")
 
-print("\n" + "-"*30 + "\n")
-print("Flecha generada con una sola instrucción print():")
-print("    *\n   * *\n  * *\n * *\n*** ***\n  * *\n  * *\n  *****")
+print("-" * 30)  # Separador
+
+# 2. Flecha doble de tamaño (manteniendo proporciones)
+print("        *")
+print("       * *")
+print("      *   *")
+print("     *     *")
+print("    *       *")
+print("   *         *")
+print("  *           *")
+print(" *             *")
+print("*****       *****")
+print("    *       *")
+print("    *       *")
+print("    *       *")
+print("    *       *")
+print("    *********")
+
+print("-" * 30)  # Separador
+
+# 3. Duplicar la flecha una al lado de la otra
+print("\nUsando multiplicacion de strings:")
+espacio = " " * 2
+print(("    *" + espacio) * 2)
+print(("   * *" + espacio) * 2)
+print(("  *   *" + espacio) * 2)
+print((" *     *" + espacio) * 2)
+print(("***   ***" + espacio) * 2)
+print(("  *   *" + espacio) * 2)
+print(("  *   *" + espacio) * 2)
+print(("  *****" + espacio) * 2)
+
+print("-" * 30)  # Separador
+
+# 4. Uso de apóstrofes en lugar de comillas
+print('    *')
+print('   * *')
+print('  *   *')
+print(' *     *')
+print('***   ***')
+print('  *   *')
+print('  *   *')
+print('  *****')
 El problema es:
 Escribiste Print con mayúscula
 En Python las funciones son sensibles a mayúsculas y minúsculas Por eso el error:
